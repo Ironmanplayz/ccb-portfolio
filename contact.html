@@ -26,11 +26,12 @@
         <main>
             <div class="box_form">
                 <h1>Contact Form</h1>
-                <form name="contactForm" method="post" class="formContact" id="bump">
+                <form action="https://api.web3forms.com/submit" method="POST" name="contactForm" class="formContact" id="bump">
+                    <input type="hidden" name="apikey" value="6c7aafb2-4295-445d-aacd-bff148be3543">
                     <fieldset>
                         <label for="name">Name (*)</label><br> <input type="text" name="name" id="name" required><br><br>
                         <label for="personalEmail">Email (*)</label><br> <input type="email" name="personalEmail" id="personalEmail" placeholder="example@gmail.com" required><br><br>
-                        <label for="personalNumber">Phone Number (*)</label><br> <input type="tel" name="personalNumber" id="personalNumber" placeholder="(xxx) xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                        <label for="personalNumber">Phone Number (*)</label><br> <input type="tel" name="personalNumber" id="personalNumber" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
                         <label for="message">Message (*)</label><br> <textarea id="message" name="message" rows="3" cols="30"></textarea><br><br>
                     </fieldset>
                     <br><input type="submit" value="Send Message" class="formSubmit">
