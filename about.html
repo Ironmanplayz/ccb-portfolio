@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Cody Benton">
+        <meta name="theme-color" content="#643c5a">
+        <meta name="color-scheme" content="dark">
+        <meta name="robots" content="index, follow">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Cody Benton Portfolio">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image" content="assets/images/social_preview.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Cody Benton developer portfolio preview">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="assets/images/social_preview.png">
+        <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+        <link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32">
+        <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="preload" href="assets/fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="assets/fonts/Montserrat-Bold.ttf" as="font" type="font/ttf" crossorigin>
         <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <meta name="description" content="Learn about Cody Benton's background in software development, web development, game development, and programming.">
+        <meta property="og:title" content="About | Cody Benton">
+        <meta property="og:description" content="Background, experience, and technical skills from Cody Benton's development work.">
+        <meta name="twitter:title" content="About | Cody Benton">
+        <meta name="twitter:description" content="Background, experience, and technical skills from Cody Benton's development work.">
+        <title>About | Cody Benton</title>
     </head>
     <body>
+        <a href="#main-content" class="skip_link">Skip to content</a>
         <div class="header_bar">
-            <header> <!-- Header of page (page name and website logo) -->
-            <div>
-                <h1>My Portfolio</h1>
-            </div>
+            <header>
+                <div>
+                    <h1><a href="index.html">My Portfolio</a></h1>
+                </div>
             </header>
-            <nav>
-                <div class="navigation_main"> <!-- Navigation division -->
+            <nav aria-label="Primary navigation">
+                <div class="navigation_main">
                     <ul class="navigation_order">
                         <li><a href="index.html">Welcome</a></li>
                         <li><a href="about.html">About</a></li>
@@ -23,51 +49,78 @@
                 </div>
             </nav>
         </div>
-        <main>
+        <main id="main-content">
             <div class="box_main">
-                <div>
-                    <p>Hi! I’m Cody Benton, a developer from Florida with a passion for building websites and creating interactive video game experiences.</p>
-                    <h3>History</h3>
-                    <p>I'm currently a college student pursuing a degree in Software Development. 
-                        I discovered my passion for programming a long time ago through a platform called ROBLOX. On this platform, 
-                        I created various experiences that helped fuel my interest in programming. From there, 
-                        I went on to participate in a Robotics club throughout high school and ultimately decided to pursue a degree that would allow me to pursue my passion professionally.
-                    </p>
-                    <h3>Technical</h3>
-                    <div class="tech_slider">
-                        <div class="slider_track">
-                            <div class="slide"><img src="assets/images/c++.png" alt="C++"></div>
-                            <div class="slide"><img src="assets/images/java.png" alt="Java"></div>
-                            <div class="slide"><img src="assets/images/lua.png" alt="Lua"></div>
-                            <div class="slide"><img src="assets/images/html5.png" alt="HTML5"></div>
-                            <div class="slide"><img src="assets/images/css3.png" alt="CSS3"></div>
-                            <div class="slide"><img src="assets/images/javascript.png" alt="JavaScript"></div>
-                            <div class="slide"><img src="assets/images/git.png" alt="Git"></div>
-                            <div class="slide"><img src="assets/images/c++.png" alt="C++"></div>
-                            <div class="slide"><img src="assets/images/java.png" alt="Java"></div>
-                            <div class="slide"><img src="assets/images/lua.png" alt="Lua"></div>
-                            <div class="slide"><img src="assets/images/html5.png" alt="HTML5"></div>
-                            <div class="slide"><img src="assets/images/css3.png" alt="CSS3"></div>
-                            <div class="slide"><img src="assets/images/javascript.png" alt="JavaScript"></div>
-                            <div class="slide"><img src="assets/images/git.png" alt="Git"></div>
-                        </div>
+                <div class="page_heading" data-reveal>
+                    <p class="page_label">About Me</p>
+                    <h2>Developer, programmer, and lifelong tinkerer.</h2>
+                    <p>Hi! I'm Cody Benton, a developer from Florida with a passion for building websites, software, and interactive video game experiences.</p>
+                </div>
+                <div class="about_highlights" data-reveal>
+                    <div>
+                        <span class="highlight_value">2015</span>
+                        <span class="highlight_label">Started game development</span>
                     </div>
-                    <p>I've spent years practicing and using various programming languages to work on and make video games and websites, 
-                        through college courses and recommended online courses, along with the tried and true doing-it-yourself, 
-                        I've been able to build a decent amount of experience.
-                    </p>
+                    <div>
+                        <span class="highlight_value">2021</span>
+                        <span class="highlight_label">Started Arma 3 modding</span>
+                    </div>
+                    <div>
+                        <span class="highlight_value">Software</span>
+                        <span class="highlight_label">Development degree path</span>
+                    </div>
+                </div>
+                <div class="about_grid">
+                    <section class="content_panel" data-reveal>
+                        <p class="project_label">Background</p>
+                        <h3>History</h3>
+                        <p>I'm currently pursuing a degree in Software Development. I discovered my passion for programming through ROBLOX, where I created interactive experiences and learned how much I enjoyed turning ideas into working systems. From there, I participated in a robotics club throughout high school and ultimately chose to pursue software development professionally.</p>
+                    </section>
+                    <section class="content_panel technical_panel" data-reveal>
+                        <p class="project_label">Experience</p>
+                        <h3>Technical</h3>
+                        <p>I've spent years using programming and markup languages across game development, modding, websites, and college coursework. My experience comes from formal classes, online learning, personal projects, and plenty of hands-on problem solving.</p>
+                        <div class="tech_slider" aria-label="Technical skills">
+                            <div class="slider_track">
+                                <div class="slide"><img src="assets/images/c++.png" alt="C++" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide"><img src="assets/images/java.png" alt="Java" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide"><img src="assets/images/lua.png" alt="Lua" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide"><img src="assets/images/html5.png" alt="HTML5" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide"><img src="assets/images/css3.png" alt="CSS3" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide"><img src="assets/images/javascript.png" alt="JavaScript" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide"><img src="assets/images/git.png" alt="Git" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide" aria-hidden="true"><img src="assets/images/c++.png" alt="" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide" aria-hidden="true"><img src="assets/images/java.png" alt="" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide" aria-hidden="true"><img src="assets/images/lua.png" alt="" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide" aria-hidden="true"><img src="assets/images/html5.png" alt="" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide" aria-hidden="true"><img src="assets/images/css3.png" alt="" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide" aria-hidden="true"><img src="assets/images/javascript.png" alt="" width="512" height="512" loading="lazy" decoding="async"></div>
+                                <div class="slide" aria-hidden="true"><img src="assets/images/git.png" alt="" width="512" height="512" loading="lazy" decoding="async"></div>
+                            </div>
+                        </div>
+                        <div class="skill_list" aria-label="Programming and development skills">
+                            <span>C++</span>
+                            <span>Java</span>
+                            <span>Lua</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Git</span>
+                        </div>
+                    </section>
                 </div>
             </div>
         </main>
-        <footer> <!-- Footer of page, contact and other information -->
+        <footer>
             <div class="footer_box">
                 <div class="social_group">
-                    <a href="https://www.linkedin.com/in/cody-benton-763123206/"><img src="assets/images/linkedin.png" alt="LinkedIn" class="social_image"></a>
-                    <a href="https://github.com/Ironmanplayz"><img src="assets/images/github.png" alt="GitHub" class="social_image"></a>
+                    <a href="https://www.linkedin.com/in/cody-benton-763123206/" aria-label="Cody Benton on LinkedIn" rel="me noreferrer"><img src="assets/images/linkedin.png" alt="" class="social_image" width="512" height="512" loading="lazy" decoding="async"></a>
+                    <a href="https://github.com/Ironmanplayz" aria-label="Cody Benton on GitHub" rel="me noreferrer"><img src="assets/images/github.png" alt="" class="social_image" width="512" height="512" loading="lazy" decoding="async"></a>
                 </div>
-                &copy; 2025 Cody Benton
+                <span>&copy; 2026 Cody Benton</span>
+                <a href="#main-content" class="back_to_top">Back to top</a>
             </div>
         </footer>
-        <script src="js/currentPage.js"></script>
+        <script src="js/currentPage.js" defer></script>
     </body>
 </html>

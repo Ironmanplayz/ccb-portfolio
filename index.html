@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Welcome</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Cody Benton">
+        <meta name="theme-color" content="#643c5a">
+        <meta name="color-scheme" content="dark">
+        <meta name="robots" content="index, follow">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Cody Benton Portfolio">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image" content="assets/images/social_preview.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Cody Benton developer portfolio preview">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="assets/images/social_preview.png">
+        <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+        <link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32">
+        <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="preload" href="assets/fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="assets/fonts/Montserrat-Bold.ttf" as="font" type="font/ttf" crossorigin>
         <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <meta name="description" content="Cody Benton's developer portfolio featuring web development, software development, game development, and Arma 3 modding work.">
+        <meta property="og:title" content="Cody Benton | Developer Portfolio">
+        <meta property="og:description" content="Web development, software development, game development, and Arma 3 modding work by Cody Benton.">
+        <meta name="twitter:title" content="Cody Benton | Developer Portfolio">
+        <meta name="twitter:description" content="Web development, software development, game development, and Arma 3 modding work by Cody Benton.">
+        <title>Cody Benton | Developer Portfolio</title>
     </head>
     <body>
+        <a href="#main-content" class="skip_link">Skip to content</a>
         <div class="header_bar">
-            <header> <!-- Header of page (page name and website logo) -->
-            <div>
-                <h1>My Portfolio</h1>
-            </div>
+            <header>
+                <div>
+                    <h1><a href="index.html">My Portfolio</a></h1>
+                </div>
             </header>
-            <nav>
-                <div class="navigation_main"> <!-- Navigation division -->
+            <nav aria-label="Primary navigation">
+                <div class="navigation_main">
                     <ul class="navigation_order">
                         <li><a href="index.html">Welcome</a></li>
                         <li><a href="about.html">About</a></li>
@@ -23,24 +49,38 @@
                 </div>
             </nav>
         </div>
-        <main>
+        <main id="main-content">
             <div class="box_home">
-                <div>
-                    <p class="typing_effect" style="font-size: 4vw;">Hey! My name is Cody.</p>
-                    <p class="typing_effect" style="padding-left: 2vw;">I'm a freelance programmer who builds websites</p>
-                    <p class="typing_effect" style="padding-left: 2vw;">and writes code for video games.</p>
-                </div>
+                <section class="hero_panel" aria-labelledby="hero-title" data-reveal>
+                    <p class="hero_label">Developer Portfolio</p>
+                    <div class="hero_copy">
+                        <h2 class="typing_effect hero_title" id="hero-title">Hey! My name is Cody.</h2>
+                        <p class="typing_effect">I'm a freelance programmer who builds websites</p>
+                        <p class="typing_effect">and writes code for video games.</p>
+                    </div>
+                    <div class="hero_focus" aria-label="Areas of focus">
+                        <span>Web Development</span>
+                        <span>Software Development</span>
+                        <span>Game Development</span>
+                        <span>Modding</span>
+                    </div>
+                    <div class="hero_actions">
+                        <a href="work.html" class="button_main">View My Work</a>
+                        <a href="contact.html" class="button_secondary">Contact Me</a>
+                    </div>
+                </section>
             </div>
         </main>
-        <footer> <!-- Footer of page, contact and other information -->
+        <footer>
             <div class="footer_box">
                 <div class="social_group">
-                    <a href="https://www.linkedin.com/in/cody-benton-763123206/"><img src="assets/images/linkedin.png" alt="LinkedIn" class="social_image"></a>
-                    <a href="https://github.com/Ironmanplayz"><img src="assets/images/github.png" alt="GitHub" class="social_image"></a>
+                    <a href="https://www.linkedin.com/in/cody-benton-763123206/" aria-label="Cody Benton on LinkedIn" rel="me noreferrer"><img src="assets/images/linkedin.png" alt="" class="social_image" width="512" height="512" loading="lazy" decoding="async"></a>
+                    <a href="https://github.com/Ironmanplayz" aria-label="Cody Benton on GitHub" rel="me noreferrer"><img src="assets/images/github.png" alt="" class="social_image" width="512" height="512" loading="lazy" decoding="async"></a>
                 </div>
-                &copy; 2025 Cody Benton
+                <span>&copy; 2026 Cody Benton</span>
+                <a href="#main-content" class="back_to_top">Back to top</a>
             </div>
         </footer>
-        <script src="js/currentPage.js"></script>
+        <script src="js/currentPage.js" defer></script>
     </body>
 </html>
