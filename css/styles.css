@@ -865,10 +865,6 @@ footer {
     color: rgb(225, 142, 142);
 }
 
-.typing_effect {
-    letter-spacing: 0.02em;
-}
-
 .social_group a:nth-child(1) .social_image {
     animation-delay: 0.4s;
 }
